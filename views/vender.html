@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vende tu Carro - Luxo Car's</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 Luxo Car's</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="vender.html" class="activo">Vender tu Carro</a></li>
+        <li><a href="comprar.html">Comprar un Carro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="capa-uno"></div>
+    <div class="capa-dos"></div>
+    <div class="capa-tres"></div>
+    <form id="formVender" class="formulario">
+        <h2 class="formulario__titulo">Vende tu Carro</h2>
+        <span id="error"></span>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="nombre">Nombre completo</label>
+            <input class="formulario__entrada" type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="correo">Correo electrónico</label>
+            <input class="formulario__entrada" type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="marca">Marca del vehículo</label>
+            <input class="formulario__entrada" type="text" id="marca" name="marca" placeholder="Ej: Toyota">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="modelo">Modelo</label>
+            <input class="formulario__entrada" type="text" id="modelo" name="modelo" placeholder="Ej: Corolla">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="anio">Año</label>
+            <input class="formulario__entrada" type="number" id="anio" name="anio" placeholder="Ej: 2020">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="precio">Precio (COP)</label>
+            <input class="formulario__entrada" type="number" id="precio" name="precio" placeholder="Ej: 45,000,000">
+        </div>
+
+        <div class="formulario__grupo">
+            <label class="formulario__etiqueta" for="descripcion">Descripción</label>
+            <textarea class="formulario__entrada" id="descripcion" name="descripcion" placeholder="Agrega detalles sobre el estado del carro..."></textarea>
+        </div>
+
+        <button class="formulario__boton" type="submit">Enviar información</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Luxo Car's | Todos los derechos reservados</p>
+  </footer>
+  <script type="module" src="../js/ValidarVender.js"></script>
+</body>
+</html>
+
+
