@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "SOLICITUDES_VENTA") // Mapea la tabla del formulario de vender.html
+@Table(name = "SOLICITUDES_VENTA")
 public class SolicitudVenta {
 
     @Id
@@ -42,11 +42,6 @@ public class SolicitudVenta {
 
     @Column(name = "estado_solicitud", length = 30)
     private String estadoSolicitud;
-
-    // Constructor vacío requerido por JPA
     public SolicitudVenta() {
     }
-
-    // ¡IMPORTANTE! Añade los Getters y Setters aquí (no mostrados por brevedad)
-    // ...
 }

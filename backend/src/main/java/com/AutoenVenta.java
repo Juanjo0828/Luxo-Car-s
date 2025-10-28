@@ -5,8 +5,8 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 @Entity
-@Table(name = "AUTOS_EN_VENTA") // Mapea a la tabla de MySQL
-public class AutoenVenta { // Nombre de la clase en UpperCamelCase
+@Table(name = "AUTOS_EN_VENTA") 
+public class AutoenVenta { 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,8 +39,6 @@ public class AutoenVenta { // Nombre de la clase en UpperCamelCase
 
     @Column(name = "garantia_extendida")
     private Boolean garantiaExtendida;
-
-    // Constructor vacío
     public AutoenVenta() {
     }
 
